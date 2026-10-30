@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Meru Online Service - বাংলা ও ইংরেজিতে অনলাইন আবেদন, চাকরি, শিক্ষা, সরকারি সেবা এবং কম্পিউটার টিপসের সহজ গাইড।">
+<meta name="theme-color" content="#123b72">
+<title>Meru Online Service | অনলাইন সেবা ও প্রযুক্তি গাইড</title>
+<style>
+:root{--navy:#123b72;--blue:#1769aa;--cyan:#eaf5ff;--ink:#17243a;--muted:#62718a;--line:#e4eaf2;--bg:#f6f8fc;--white:#fff;--shadow:0 12px 32px rgba(18,59,114,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--navy);font-size:19px}.logo{height:42px;width:42px;border-radius:13px;background:linear-gradient(135deg,#1769aa,#123b72);color:white;display:grid;place-items:center;font-weight:900;font-size:18px}.navlinks{display:flex;align-items:center;gap:22px;color:#41516a;font-size:14px}.navlinks a:hover{color:var(--blue)}.actions{display:flex;gap:9px;align-items:center}.lang,.menu{border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px 13px;font-weight:700;color:var(--navy);cursor:pointer}.menu{display:none}
+.hero{padding:70px 0 58px;background:radial-gradient(circle at 85% 15%,#d8edff 0,transparent 28%),linear-gradient(135deg,#f1f8ff,#fff 65%)}.hero-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:35px;align-items:center}.eyebrow{display:inline-block;background:#e0f0ff;color:#145a94;padding:6px 12px;border-radius:30px;font-size:13px;font-weight:750}.hero h1{font-size:clamp(34px,5vw,54px);line-height:1.15;letter-spacing:-1.5px;color:var(--navy);margin:18px 0}.hero p{font-size:17px;color:var(--muted);max-width:650px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-block;padding:12px 18px;border-radius:11px;background:var(--blue);color:white;font-weight:750;border:1px solid var(--blue)}.btn.alt{background:white;color:var(--navy);border-color:#cbd8e8}.hero-card{background:white;border:1px solid var(--line);padding:25px;border-radius:22px;box-shadow:var(--shadow)}.hero-card .big{font-size:48px}.hero-card h3{margin:8px 0;color:var(--navy)}.hero-card p{font-size:14px;margin:0}
+section{padding:55px 0}.section-head{text-align:center;margin-bottom:28px}.section-head h2{font-size:30px;color:var(--navy);margin:0 0 8px}.section-head p{color:var(--muted);margin:0}.searchbar{max-width:620px;margin:24px auto 0;display:flex;background:white;border:1px solid var(--line);border-radius:13px;padding:6px;box-shadow:0 6px 18px rgba(18,59,114,.05)}.searchbar input{flex:1;min-width:0;border:0;outline:0;padding:10px 12px;font:inherit}.searchbar button{border:0;background:var(--navy);color:#fff;border-radius:9px;padding:0 17px;font-weight:700;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.tile,.article{background:white;border:1px solid var(--line);border-radius:17px;padding:21px;transition:.2s}.tile:hover,.article:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.tile .ico{width:46px;height:46px;border-radius:13px;background:var(--cyan);display:grid;place-items:center;font-size:23px}.tile h3,.article h3{color:var(--navy);margin:13px 0 5px;font-size:18px}.tile p,.article p{color:var(--muted);font-size:14px;margin:0}.articles{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.tag{font-size:12px;color:#1769aa;background:#eaf5ff;padding:4px 9px;border-radius:30px;display:inline-block;font-weight:700}.read{display:inline-block;margin-top:13px;color:var(--blue);font-weight:750;font-size:14px}
+.notice{background:#eaf5ff;border:1px solid #d4e9fc;border-radius:16px;padding:20px;color:#294b70}.notice strong{color:var(--navy)}.about{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}.about-panel{background:white;border:1px solid var(--line);border-radius:18px;padding:25px}.about-panel h3{margin-top:0;color:var(--navy)}.about-panel p{color:var(--muted)}
+footer{background:#102d54;color:#dce9f8;padding:35px 0 20px}.foot{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.foot strong{font-size:19px}.foot p{color:#b8cbe0;font-size:14px;max-width:480px}.copy{border-top:1px solid #315071;margin-top:25px;padding-top:15px;color:#b8cbe0;font-size:13px}
+.empty{display:none;text-align:center;color:var(--muted);padding:25px;grid-column:1/-1}
+@media(max-width:800px){.navlinks{display:none}.menu{display:inline-block}.hero-grid,.about{grid-template-columns:1fr}.grid,.articles{grid-template-columns:repeat(2,1fr)}.hero{padding:48px 0}}
+@media(max-width:520px){.grid,.articles{grid-template-columns:1fr}.hero h1{font-size:36px}.section-head h2{font-size:25px}.nav{min-height:65px}.brand{font-size:16px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#"><span class="logo">M</span><span>Meru Online Service</span></a>
+  <nav class="navlinks"><a href="#home" data-bn="হোম" data-en="Home">হোম</a><a href="#services" data-bn="সেবাসমূহ" data-en="Services">সেবাসমূহ</a><a href="#guides" data-bn="গাইড" data-en="Guides">গাইড</a><a href="#about" data-bn="আমাদের সম্পর্কে" data-en="About">আমাদের সম্পর্কে</a><a href="#contact" data-bn="যোগাযোগ" data-en="Contact">যোগাযোগ</a></nav>
+  <div class="actions"><button class="lang" id="langBtn" type="button">English</button><button class="menu" type="button" onclick="document.querySelector('#services').scrollIntoView()">☰</button></div>
+ </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div><span class="eyebrow" data-bn="সহজ অনলাইন সেবা ও প্রযুক্তি গাইড" data-en="Simple online service & technology guides">সহজ অনলাইন সেবা ও প্রযুক্তি গাইড</span>
+   <h1 data-bn="প্রযুক্তির ব্যবহার হোক আরও সহজ" data-en="Make technology easier for everyone">প্রযুক্তির ব্যবহার হোক আরও সহজ</h1>
+   <p data-bn="অনলাইন আবেদন, চাকরি, শিক্ষা, সরকারি সেবা এবং কম্পিউটার বিষয়ে সহজ ভাষায় প্রয়োজনীয় নির্দেশনা ও টিপস খুঁজে নিন।" data-en="Find helpful, easy-to-follow guides for online applications, jobs, education, public services and computer tips.">অনলাইন আবেদন, চাকরি, শিক্ষা, সরকারি সেবা এবং কম্পিউটার বিষয়ে সহজ ভাষায় প্রয়োজনীয় নির্দেশনা ও টিপস খুঁজে নিন।</p>
+   <div class="hero-buttons"><a class="btn" href="#services" data-bn="সেবাসমূহ দেখুন" data-en="Explore services">সেবাসমূহ দেখুন</a><a class="btn alt" href="#guides" data-bn="গাইড পড়ুন" data-en="Read guides">গাইড পড়ুন</a></div>
+  </div>
+  <div class="hero-card"><div class="big">💻</div><h3 data-bn="শিখুন • জানুন • এগিয়ে যান" data-en="Learn • Discover • Progress">শিখুন • জানুন • এগিয়ে যান</h3><p data-bn="ডিজিটাল সেবা ব্যবহারে আপনাকে সহায়তা করার জন্য তৈরি একটি তথ্যভিত্তিক প্ল্যাটফর্ম।" data-en="An informative platform designed to help you use digital services with confidence.">ডিজিটাল সেবা ব্যবহারে আপনাকে সহায়তা করার জন্য তৈরি একটি তথ্যভিত্তিক প্ল্যাটফর্ম।</p></div>
+ </div>
+</section>
+<section id="services">
+ <div class="wrap"><div class="section-head"><h2 data-bn="আমাদের বিষয়সমূহ" data-en="Explore Topics">আমাদের বিষয়সমূহ</h2><p data-bn="আপনার প্রয়োজনীয় তথ্য সহজে খুঁজে নিন" data-en="Find the information you need">আপনার প্রয়োজনীয় তথ্য সহজে খুঁজে নিন</p>
+ <div class="searchbar"><input id="searchInput" type="search" placeholder="যে বিষয়ে জানতে চান লিখুন..." aria-label="Search"><button id="searchBtn" data-bn="খুঁজুন" data-en="Search">খুঁজুন</button></div></div>
+ <div class="grid" id="topicGrid">
+  <article class="tile" data-search="অনলাইন আবেদন online application passport police clearance birth registration"><div class="ico">📝</div><h3 data-bn="অনলাইন আবেদন" data-en="Online Applications">অনলাইন আবেদন</h3><p data-bn="বিভিন্ন অনলাইন ফরম ও আবেদন প্রক্রিয়ার ধাপে ধাপে গাইড।" data-en="Step-by-step guides for online forms and applications.">বিভিন্ন অনলাইন ফরম ও আবেদন প্রক্রিয়ার ধাপে ধাপে গাইড।</p></article>
+  <article class="tile" data-search="চাকরি job career application"><div class="ico">💼</div><h3 data-bn="চাকরি ও ক্যারিয়ার" data-en="Jobs & Career">চাকরি ও ক্যারিয়ার</h3><p data-bn="চাকরির আবেদন, CV তৈরি ও প্রস্তুতির সহায়ক তথ্য।" data-en="Helpful information on job applications, CVs and preparation.">চাকরির আবেদন, CV তৈরি ও প্রস্তুতির সহায়ক তথ্য।</p></article>
+  <article class="tile" data-search="শিক্ষা admission education scholarship"><div class="ico">🎓</div><h3 data-bn="শিক্ষা ও ভর্তি" data-en="Education & Admission">শিক্ষা ও ভর্তি</h3><p data-bn="ভর্তি, ফলাফল ও শিক্ষাসংক্রান্ত প্রয়োজনীয় নির্দেশনা।" data-en="Guidance for admissions, results and education resources.">ভর্তি, ফলাফল ও শিক্ষাসংক্রান্ত প্রয়োজনীয় নির্দেশনা।</p></article>
+  <article class="tile" data-search="কম্পিউটার computer windows software internet"><div class="ico">🖥️</div><h3 data-bn="কম্পিউটার টিপস" data-en="Computer Tips">কম্পিউটার টিপস</h3><p data-bn="Windows, সফটওয়্যার, ইন্টারনেট ও সাধারণ সমস্যার সমাধান।" data-en="Windows, software, internet and common troubleshooting tips.">Windows, সফটওয়্যার, ইন্টারনেট ও সাধারণ সমস্যার সমাধান।</p></article>
+  <article class="tile" data-search="ট্যাক্স আয়কর tax return"><div class="ico">🧾</div><h3 data-bn="ট্যাক্স ও আয়কর" data-en="Tax & Returns">ট্যাক্স ও আয়কর</h3><p data-bn="আয়কর রিটার্ন ও করসংক্রান্ত প্রাথমিক তথ্য ও গাইড।" data-en="Introductory information and guides about tax returns.">আয়কর রিটার্ন ও করসংক্রান্ত প্রাথমিক তথ্য ও গাইড।</p></article>
+  <article class="tile" data-search="সরকারি সেবা government services license"><div class="ico">🏛️</div><h3 data-bn="সরকারি সেবা" data-en="Government Services">সরকারি সেবা</h3><p data-bn="সরকারি সেবা, লাইসেন্স ও প্রয়োজনীয় কাগজপত্রের তথ্য।" data-en="Information about public services, licenses and documents.">সরকারি সেবা, লাইসেন্স ও প্রয়োজনীয় কাগজপত্রের তথ্য।</p></article>
+  <div class="empty" id="emptyState" data-bn="কোনো বিষয় পাওয়া যায়নি। অন্য শব্দ দিয়ে খুঁজুন।" data-en="No topics found. Try another search.">কোনো বিষয় পাওয়া যায়নি। অন্য শব্দ দিয়ে খুঁজুন।</div>
+ </div>
+ </div>
+</section>
+<section id="guides" style="background:#fff">
+ <div class="wrap"><div class="section-head"><h2 data-bn="সাম্প্রতিক গাইড" data-en="Latest Guides">সাম্প্রতিক গাইড</h2><p data-bn="শুরু করার জন্য কিছু নমুনা বিষয়" data-en="A few sample topics to get started">শুরু করার জন্য কিছু নমুনা বিষয়</p></div>
+ <div class="articles">
+  <article class="article"><span class="tag" data-bn="কম্পিউটার" data-en="Computer">কম্পিউটার</span><h3 data-bn="কম্পিউটারে PDF ফাইল তৈরি করার সহজ উপায়" data-en="Easy ways to create a PDF on your computer">কম্পিউটারে PDF ফাইল তৈরি করার সহজ উপায়</h3><p data-bn="এই লেখাটি শিগগিরই বিস্তারিত নির্দেশনা দিয়ে প্রকাশ করা হবে।" data-en="A detailed step-by-step guide will be published here soon.">এই লেখাটি শিগগিরই বিস্তারিত নির্দেশনা দিয়ে প্রকাশ করা হবে।</p><span class="read" data-bn="শিগগিরই আসছে" data-en="Coming soon">শিগগিরই আসছে</span></article>
+  <article class="article"><span class="tag" data-bn="অনলাইন আবেদন" data-en="Online application">অনলাইন আবেদন</span><h3 data-bn="অনলাইনে আবেদন করার আগে যে বিষয়গুলো জানবেন" data-en="What to know before applying online">অনলাইনে আবেদন করার আগে যে বিষয়গুলো জানবেন</h3><p data-bn="সঠিক তথ্য ও প্রয়োজনীয় কাগজপত্র প্রস্তুত রাখার প্রাথমিক নির্দেশনা।" data-en="Basic guidance on preparing accurate information and required documents.">সঠিক তথ্য ও প্রয়োজনীয় কাগজপত্র প্রস্তুত রাখার প্রাথমিক নির্দেশনা।</p><span class="read" data-bn="শিগগিরই আসছে" data-en="Coming soon">শিগগিরই আসছে</span></article>
+  <article class="article"><span class="tag" data-bn="চাকরি" data-en="Career">চাকরি</span><h3 data-bn="একটি ভালো CV তৈরির প্রাথমিক নিয়ম" data-en="Basic tips for creating a good CV">একটি ভালো CV তৈরির প্রাথমিক নিয়ম</h3><p data-bn="CV-তে কোন তথ্যগুলো রাখা প্রয়োজন, তার একটি প্রাথমিক ধারণা।" data-en="An introduction to the information you should include in a CV.">CV-তে কোন তথ্যগুলো রাখা প্রয়োজন, তার একটি প্রাথমিক ধারণা।</p><span class="read" data-bn="শিগগিরই আসছে" data-en="Coming soon">শিগগিরই আসছে</span></article>
+ </div></div>
+</section>
+<section id="about"><div class="wrap about">
+ <div><div class="eyebrow" data-bn="আমাদের সম্পর্কে" data-en="About us">আমাদের সম্পর্কে</div><h2 style="color:var(--navy);font-size:30px" data-bn="Meru Online Service" data-en="Meru Online Service">Meru Online Service</h2><p style="color:var(--muted)" data-bn="আমাদের লক্ষ্য হলো অনলাইন সেবা ও প্রযুক্তি বিষয়ে নির্ভরযোগ্য, সহজবোধ্য এবং হালনাগাদ তথ্য সবার কাছে পৌঁছে দেওয়া।" data-en="Our goal is to make reliable, clear and useful information about online services and technology accessible to everyone.">আমাদের লক্ষ্য হলো অনলাইন সেবা ও প্রযুক্তি বিষয়ে নির্ভরযোগ্য, সহজবোধ্য এবং হালনাগাদ তথ্য সবার কাছে পৌঁছে দেওয়া।</p></div>
+ <div class="about-panel"><h3 data-bn="গুরুত্বপূর্ণ তথ্য" data-en="Important Information">গুরুত্বপূর্ণ তথ্য</h3><p data-bn="এই ওয়েবসাইটটি তথ্য ও শিক্ষামূলক গাইডের জন্য। এটি কোনো সরকারি ওয়েবসাইট নয়। আবেদন করার আগে সংশ্লিষ্ট সরকারি ওয়েবসাইটে সর্বশেষ নিয়ম যাচাই করুন।" data-en="This website provides informational and educational guides. It is not an official government website. Always verify the latest requirements on the relevant official government website before applying.">এই ওয়েবসাইটটি তথ্য ও শিক্ষামূলক গাইডের জন্য। এটি কোনো সরকারি ওয়েবসাইট নয়। আবেদন করার আগে সংশ্লিষ্ট সরকারি ওয়েবসাইটে সর্বশেষ নিয়ম যাচাই করুন।</p></div>
+ </div></section>
+<section id="contact" style="padding-top:0"><div class="wrap"><div class="notice"><strong data-bn="যোগাযোগ" data-en="Contact">যোগাযোগ</strong><p data-bn="যোগাযোগের ইমেইল ঠিকানা ও অন্যান্য তথ্য শিগগিরই এখানে যোগ করা হবে।" data-en="Our contact email and other details will be added here soon.">যোগাযোগের ইমেইল ঠিকানা ও অন্যান্য তথ্য শিগগিরই এখানে যোগ করা হবে।</p></div></div></section>
+</main>
+<footer><div class="wrap"><div class="foot"><div><strong>Meru Online Service</strong><p data-bn="অনলাইন সেবা, শিক্ষা ও প্রযুক্তি বিষয়ে সহজ গাইড।" data-en="Simple guides for online services, education and technology.">অনলাইন সেবা, শিক্ষা ও প্রযুক্তি বিষয়ে সহজ গাইড।</p></div><div><span data-bn="বাংলা ও ইংরেজি" data-en="Bangla & English">বাংলা ও ইংরেজি</span></div></div><div class="copy">© <span id="year"></span> Meru Online Service. <span data-bn="সর্বস্বত্ব সংরক্ষিত।" data-en="All rights reserved.">সর্বস্বত্ব সংরক্ষিত।</span></div></div></footer>
+<script>
+let language='bn';
+const langBtn=document.getElementById('langBtn');
+function setLanguage(lang){language=lang;document.documentElement.lang=lang;document.querySelectorAll('[data-bn][data-en]').forEach(el=>{el.textContent=el.dataset[lang]});langBtn.textContent=lang==='bn'?'English':'বাংলা';document.getElementById('searchInput').placeholder=lang==='bn'?'যে বিষয়ে জানতে চান লিখুন...':'Type a topic to search...';}
+langBtn.addEventListener('click',()=>setLanguage(language==='bn'?'en':'bn'));
+document.getElementById('year').textContent=new Date().getFullYear();
+function searchTopics(){const q=document.getElementById('searchInput').value.trim().toLowerCase();let visible=0;document.querySelectorAll('#topicGrid .tile').forEach(card=>{const hay=(card.innerText+' '+card.dataset.search).toLowerCase();const show=!q||hay.includes(q);card.style.display=show?'':'none';if(show)visible++});document.getElementById('emptyState').style.display=visible?'none':'block'}
+document.getElementById('searchBtn').addEventListener('click',searchTopics);
+document.getElementById('searchInput').addEventListener('input',searchTopics);
+document.getElementById('searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')searchTopics()});
+</script>
+</body></html>
